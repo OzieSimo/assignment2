@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Development" >
+    <meta name="keywords"   content="Assignment 2 - Restaurant Discovery & Reservations" >
+    <meta name="author"     content="Szymon (Simon) Szyc" >
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <link href="design/mobile.css" rel="stylesheet" type="text/css">
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <script defer src="design/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Makes the website responsive on phones and tablets -->
+</head>
+<body>
+
+    <div class="header">
+        <h1>Restaurant Discovery & Reservations</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="register.html" class="active">Register</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="recommend.html">Recommendations</a></li>
+        </ul>
+    </div>
+    
+<div class="container">
+        <div class = "main">
+             <main>
+                <fieldset>
+                    <legend><h2>Registration</h2></legend>
+
+                       <p class="option-group">    
+                            <span>Gender</span>
+                            <label><input type="radio" name="Gender" value="Male"> Male</label>
+                            <label><input type="radio" name="Gender" value="Female"> Female</label>
+                            <label><input type="radio" name="Gender" value="Other"> Other</label>
+                        </p>
+
+                        <p class="option-group">
+                            <span>Dietary Preference</span>
+                            <label><input type="checkbox" name="dietary" value="Vegan"> Vegan</label>
+                            <label><input type="checkbox" name="dietary" value="Vegetarian"> Vegetarian</label>
+                            <label><input type="checkbox" name="dietary" value="Gluten Free"> Gluten Free</label>
+                            <label><input type="checkbox" name="dietary" value="None"> None</label>
+                        </p>
+
+                        <p>
+                            <label for="username">Username:</label>
+                            <input id="username" type="text" name="UserName">
+                        </p>
+
+                        <p>
+                            <label for="email">Email Address:</label>
+                            <input id="email" type="email" name="EmailAddress" placeholder="name@domain.com" required="required">
+                        </p>
+                        
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input id="phone" type="text" name="PhoneNumber">
+                        </p>
+
+                        <p>
+                            <label for="country">Country/Region:</label>
+                            <input id="country" type="text" name="CountryRegion">
+                        </p>
+
+                        <p>
+                            <label for="pwd1">Password:</label>
+                            <input id="pwd1" type="password" name="Password">
+                        </p>
+
+                        <p>
+                            <label for="pwd2">Confirm Password:</label>
+                            <input id="pwd2" type="password" name="ConfirmPassword">
+                        </p>
+
+                        <p><button type="button" id="submitBtn">Create Account</button></p>
+                            <p id="accountMessage"></p>
+                </fieldset>
+            </main>
+        </div>
+</div>
+</div>
+</body>
+</html>

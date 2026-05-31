@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Reservation</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Development" >
+    <meta name="keywords"   content="Assignment 2 - Restaurant Discovery & Reservations" >
+    <meta name="author"     content="Szymon (Simon) Szyc" >
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <link href="design/mobile.css" rel="stylesheet" type="text/css">
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <script defer src="design/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website responsive on phones and tablets -->
+</head>
+<body>
+
+    <div class="header">
+        <h1>Restaurant Discovery & Reservations</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+           <li><a href="Index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="reservation.html" class="active">Reservation</a></li>
+            <li><a href="recommend.html">Recommendations</a></li>
+        </ul>
+    </div>
+
+   <div class="container">
+        <div class = "main">
+             <main>
+                <form id="reservationForm" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php">
+                
+                    <fieldset>
+                        <legend><h2>Reservation</h2></legend>
+                            
+                            <p>
+                                <label for="FullName">Full Name:</label>
+                                <input id="FullName" type="text" name="FullName">
+                            </p>
+
+                            <p>
+                                <label for="email">Email Address:</label>
+                                <input id="email" type="email" name="EmailAddress" placeholder="name@domain.com" required="required">
+                            </p>
+
+                            <p>
+                                <label for="phone">Phone Number:</label>
+                                <input id="phone" type="text" name="PhoneNumber">
+                            </p>
+
+                            <p>
+                                <label for="RestaurantSelection">Restaurant Selection:</label>
+                                <select id="RestaurantSelection" name="RestaurantSelection">
+                                    <option value="Pepe's Italian & Liquor" selected>Pepe's Italian & Liquor</option>
+                                    <option value="Ippudo Ramen">Ippudo Ramen</option>
+                                    <option value="Pochana">Pochana</option>
+                                    <option value="Operator Diner">Operator Diner</option>
+                                    <option value="MCKINLY Eatery">MCKINLY Eatery</option>
+                                    <option value="Hakoya Izakaya">Hakoya Izakaya</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="Deposit">Deposit:</label>
+                                <select id="Deposit" name="Deposit">
+                                    <option value="20" selected>$20</option>
+                                    <option value="40">$40</option>
+                                    <option value="60">$60</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="DepositMethod">Deposit Method:</label>
+                                <select id="DepositMethod" name="DepositMethod">
+                                    <option value="Voucher" selected>Voucher</option>
+                                    <option value="Online Payment">Online Payment</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="CreditCard">Credit Card</label>
+                                <input id="CreditCard" type="text" name="CreditCard" >
+                            </p>
+
+                            <p>
+                                <label for="VoucherCode">Voucher Code:</label> 
+                                <input id="VoucherCode" type="text" name="VoucherCode" >
+                            </p>
+
+                            <p>
+                                <label for="Request">Special Requests (Optional):</label>
+                                <input id="Request" type="text" name="Request" >
+                            </p>
+
+                            <p>
+                                <label for="Date">Date</label>
+                                <input id="Date" type="date" name="date">
+                            </p>
+
+                            <p> <label>Time</label>
+                                <input id="Time" type="time" name="time">
+                            </p>
+
+                            <p>
+                                <label for="PeopleAttending">People:</label>
+                                <select id="PeopleAttending" name="PeopleAttending">
+                                    <option value="1" selected>1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="BillingAddress">Billing Email Address:</label>
+                                <input id="BillingEmail" type="email" name="BillingAddress" placeholder="name@domain.com" required="required">
+                            </p>
+
+                            <p>
+                                <label for="SameEmail">Same as email:</label>
+                                <input id="SameEmail" type="checkbox">
+                            </p>
+
+                            <p>
+                                <label for="pwd1">Password:</label>
+                                <input id="pwd1" type="password" name="Password">
+                            </p>
+
+                            <p>
+                                <label for="pwd2">Confirm Password:</label>
+                                <input id="pwd2" type="password" name="ConfirmPassword">
+                            </p>
+
+                            <button type="submit" id="reservationBtn">Make Reservation</button>
+                            <p id="accountMessage"></p>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
+    </div>
+</div>
+</body>
+</html>

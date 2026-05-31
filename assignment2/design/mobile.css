@@ -1,0 +1,210 @@
+/*Comments made here are for my own personal reference*/
+@media screen and (max-width: 768px) {
+   * /*universal selector for all elements*/
+   {
+        box-sizing: border-box; /*keeps the width in place for the mobile screen*/
+    }
+    html, body {
+        overflow-x: hidden;
+    }
+
+/* --- HEADER ---*/
+
+.header {
+    display: flex; /*a flex container to centre and adjust alignment accordingly*/
+    justify-content: center; /*content centred horizontally/main axis*/
+    align-items: center; /*content centred vertically/main axis*/
+    padding: 10px; /*spacing between border and element*/
+    border-style: double;
+    background-color:rgb(212, 196, 252);
+    box-shadow: 2px 2px 2px 2px #797979;
+    text-align: center;
+}
+
+/* --- BODY ---*/
+
+body {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/*--- CONTAINNER LAYOUT ---*/
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/*--- RECOMMENDATIONS FORMATTING ---*/
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+/*--- MAIN CONTENT ---*/
+
+.main{
+    flex: none; /*flex is removed to cuase stack instead for better veiwing*/
+    color: black; 
+    width: 100%; /*full width for full view on phone*/
+    background-color:lightskyblue;
+    box-shadow: 2px 2px 2px 1px #797979;
+    text-align: center;
+    padding: 10px; /*preventing text from touching edges*/
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.main ul li {
+    list-style-type: none;
+}
+
+/*--- NAVIGATION BAR ---*/
+
+.nav {
+    margin-top: 10px; /*separation from the bottom of the header border*/
+    margin-bottom: 10px; /*separation from main*/
+    box-shadow: 2px 2px 2px 1px #797979;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav li {
+    width: 100%
+}
+.nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 8px;
+    padding: 13px;
+    min-height: 50px;
+    width: 100%;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.nav a:hover {
+    background-color: brown;
+}
+.nav a.active { /*transition that keeps current page highlighted on nav bar*/
+    background-color: brown;
+}
+
+/*--- ASSIDE PANEL ---*/
+
+.aside {
+    flex: none;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 10px; /*fixing italics sticking out of background*/
+    align-self: auto;
+    box-shadow: 2px 2px 2px 1px #797979;
+    animation-name: glowAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/*--- DATA LIST ---*/
+
+label {
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*--- BOTTOM FOOTER ---*/
+
+.footer{
+    font-style: italic;
+    text-align: center;
+}
+
+/*--- IMAGE CONFIG ---*/
+
+.photo-box {
+    padding: 10px; /*reszing image*/
+
+}
+.photo-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.photo-box img {
+    width: 100%; /*scaling to note section*/
+    height: auto;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+fieldset p {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 12px 0;
+}
+
+fieldset p label {
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+fieldset p input,
+fieldset p select {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+fieldset p input[type="checkbox"],
+fieldset p input[type="radio"] {
+    width: auto;
+}
+
+/*--- MOBILE OPTION GROUP FIX ---*/
+
+.option-group {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.option-group span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.option-group label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin: 6px 0;
+}
+
+}

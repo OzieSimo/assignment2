@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recommendations</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Web Development" >
+    <meta name="keywords"   content="Assignment 2 - Restaurant Discovery & Reservations" >
+    <meta name="author"     content="Szymon (Simon) Szyc" >
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <link href="design/mobile.css" rel="stylesheet" type="text/css">
+    <link href="design/desktop.css" rel="stylesheet" type="text/css">
+    <script defer src="design/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the website responsive on phones and tablets -->
+</head>
+<body>
+
+    <div class="header">
+        <h1>Restaurant Discovery & Reservations</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+           <li><a href="Index.html">Home</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="recommend .html" class="active">Recommendations</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    <div class="content-left">
+        <div class = "main">
+             <main>
+                <H2>Recommendations</H2>
+                <P>Please select your preferences so that we can accommodate the correct restuarant to your needs</P>
+                <p>
+                    <label>Dietary Need 1</label>
+                    <input list="dlDietary" id="diet1" class="dietary">
+                </p>
+
+                <p>
+                    <label>Dietary Need 2</label>
+                    <input list="dlDietary" id="diet2" class="dietary">
+                </p>
+
+                <p>
+                    <label>Dietary Need 3</label>
+                    <input list="dlDietary" id="diet3" class="dietary">
+                </p>
+
+                <datalist id="dlDietary">
+                    <option value="Gluten Free">
+                    <option value="Vegetarian">
+                    <option value="Vegan">
+                    <option value="None">
+                </datalist>
+                <p>
+                    <label>Price Range</label>
+                    <input list="dlPriceRange" id="PriceRange" class="Price">
+                </p>
+                
+                <datalist id="dlPriceRange">
+                    <option value="$20-$40">
+                    <option value="$40-$60">
+                </datalist>
+
+                <p>
+                    <label>Dining Purpose</label>
+                    <input list="dlPurpose" id="purpose" class="purpose">
+                </p>
+                
+                <datalist id="dlPurpose">
+                    <option value="Friends">
+                    <option value="Family">
+                    <option value="Date">
+                </datalist>
+
+                <button type="button" id="recommendBtn">Recommend Restaurant</button>
+                <div id="recommendResult"></div>
+
+                <section id="recommendationBox">
+                    <h2>Recommended Restaurant</h2>
+                    <p id="restaurantName"></p>
+                    <p id="restaurantReason"></p>
+                    <button type="button" id="selectRestaurantBtn">Select This Restaurant</button>
+                </section>
+            </main>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>
+
+       
