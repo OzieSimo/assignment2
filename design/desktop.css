@@ -1,0 +1,183 @@
+/*Comments made here are for my own personal reference*/
+@media screen and (min-width: 1024px) { /*desktop style for minimum width of 1024 pixels*/
+
+/* --- HEADER ---*/
+
+.header {
+    display: flex; /*enables flexbox layout*/
+    justify-content: center; /*content centred horizontally/main axis*/
+    align-items: center; /*content centred vertically/main axis*/
+    padding: 20px; /*space iside header*/
+    border-style: double;
+    background-color: #B5BAFF;
+    box-shadow: 3px 3px 3px 2px #797979;
+}
+
+/* --- BODY ---*/
+
+body {
+    background-color: #9FA1FF; /*main background color*/
+    font-family: Arial, Helvetica, sans-serif; /*font*/
+}
+
+/*--- CONTAINNER LAYOUT ---*/
+
+.container{
+    display: flex;
+    gap: 20px; /*space between main + aside*/
+    margin-bottom: 20px; /*footer pushed down*/
+}
+
+/*--- RECOMMENDATIONS FORMATTING ---*/
+
+.content-left{
+    display: flex;
+    flex-direction: column; /*vertical stack*/
+    flex: 3; /*allocated larger portion*/
+    gap: 10px;
+}
+
+/*--- MAIN CONTENT ---*/
+
+.main{
+    flex: 3;
+    color: black;
+    width: auto;
+    height: auto;
+    background-color:#AEE2FF;
+    box-shadow: 3px 3px 3px 2px #797979;
+    text-align: center;
+}
+
+.main ul li {
+    list-style-type: none;
+}
+
+/*--- NAVIGATION BAR ---*/
+
+.nav {
+    margin-top: 10px; /*separation from the bottom of the header border*/
+    margin-bottom: 10px; /*separation from main*/
+    box-shadow: 3px 3px 3px 2px #797979;
+}
+.nav ul{
+    display: flex;
+    width: 100%;
+    background-color: darkgray;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.nav li {
+    flex: 1
+}
+.nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+.nav a:hover { /*hover over transition for navigation bar*/
+    background-color: brown;
+}
+.nav a.active { /*transition that keeps current page highlighted on nav bar*/
+    background-color: brown;
+}
+
+/*--- ASSIDE PANEL ---*/
+
+.aside {
+    flex: 1;
+    background-color: #D9F9DF;
+    padding: 10px; /*fixing italics sticking out of background*/
+    align-self: flex-start;
+    padding-top: 0; /*reszing top of background, looks too high*/
+    box-shadow: 3px 3px 3px 2px #797979;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+/*--- DATA LIST ---*/
+
+label {
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*--- LABEL LIST FOR RESGISTER ---*/
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+.option-group {
+    text-align: left;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.option-group span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.option-group label {
+    display: block;
+    width: auto;
+    text-align: left;
+    margin: 5px 0;
+}
+
+fieldset { /*border of registration box*/
+    width: 650px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+/*--- IMAGE CONFIG ---*/
+
+.photo-box {
+    padding: 12px; /*reszing image*/
+}
+.photo-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.photo-box img {
+    width: 100%; /*scaling to note section*/
+}
+
+/*--- RESERVATION FORM ALIGNMENT ---*/
+
+#reservationForm p { /*#  Selects the HTML element with id="reservationForm".*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0;
+}
+
+#reservationForm label {
+    width: 180px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#reservationForm input,
+#reservationForm select {
+    width: 220px;
+}
+
+fieldset p input[type="checkbox"] {
+    width: auto;
+}
+}
